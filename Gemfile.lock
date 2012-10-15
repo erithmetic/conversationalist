@@ -1,0 +1,26 @@
+PATH
+  remote: .
+  specs:
+    herbalist (0.1.0)
+      active_support
+      conversions
+      numerizer
+
+GEM
+  remote: http://rubygems.org/
+  remote: http://gems.github.com/
+  specs:
+    active_support (3.0.0)
+      activesupport (= 3.0.0)
+    activesupport (3.0.0)
+    conversions (1.4.6)
+      activesupport (>= 2.3.4)
+    jeremymcanally-context (0.5.5)
+    numerizer (0.1.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  herbalist!
+  jeremymcanally-context

@@ -39,22 +39,8 @@ Gem::Specification.new do |s|
      "test/test_herbalist.rb"
   ]
 
-  if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
-    s.specification_version = 3
-
-    if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<alchemist>, [">= 0.1.2"])
-      s.add_runtime_dependency(%q<numerizer>, [">= 0.1.1"])
-      s.add_development_dependency(%q<jeremymcanally-context>, [">= 0"])
-    else
-      s.add_dependency(%q<alchemist>, [">= 0.1.2"])
-      s.add_dependency(%q<numerizer>, [">= 0.1.1"])
-      s.add_dependency(%q<jeremymcanally-context>, [">= 0"])
-    end
-  else
-    s.add_dependency(%q<alchemist>, [">= 0.1.2"])
-    s.add_dependency(%q<numerizer>, [">= 0.1.1"])
-    s.add_dependency(%q<jeremymcanally-context>, [">= 0"])
-  end
+  s.add_runtime_dependency 'active_support'
+  s.add_runtime_dependency 'conversions'
+  s.add_runtime_dependency 'numerizer'
+  s.add_development_dependency 'jeremymcanally-context'
 end
